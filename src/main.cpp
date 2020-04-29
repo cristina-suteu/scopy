@@ -146,6 +146,8 @@ int main(int argc, char **argv)
 		languageFileName = language;
 	}
 
+	f.close();
+
 	myappTranslator.load(languageFileName);
 	app.installTranslator(&myappTranslator);
 
